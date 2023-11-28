@@ -34,8 +34,8 @@ input {
     max-height: 150px;
 }
 
-.animate__fadeIn {
-    --animate-duration: 2s;
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2000ms;
 }
 
 .card-grid {
