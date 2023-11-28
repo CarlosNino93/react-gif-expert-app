@@ -35,5 +35,10 @@ input {
 }
 
 .animate__fadeIn {
-    --animate-duration: 3000ms;
+    --animate-duration: 2s;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
 }
