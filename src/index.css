@@ -1,3 +1,8 @@
+:root {
+    --animate-duration: 2000ms;
+    --animate-delay: 0.9s;
+}
+
 * {
     font-family: Helvetica, arial, sans-serif;
 }
@@ -29,8 +34,6 @@ input {
     max-height: 150px;
 }
 
-.card-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.animate__fadeIn {
+    --animate-duration: 3000ms;
 }

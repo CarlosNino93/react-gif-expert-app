@@ -13,7 +13,7 @@ export const AddCategory = ({ setCategories }) => {
         if (inputValue.trim().length > 2) {
             setCategories((categories) => {
                 if (categories.find((oldCategory) => oldCategory === inputValue) === undefined) {
-                    return [...categories, inputValue];
+                    return [inputValue];
                 } else {
                     alert('this categorie is already in the list');
                     return categories;
