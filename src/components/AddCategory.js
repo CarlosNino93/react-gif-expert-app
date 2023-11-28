@@ -11,7 +11,14 @@ export const AddCategory = ({ setCategories }) => {
         event.preventDefault();
 
         if (inputValue.trim().length > 2) {
-            setCategories((categories) => [...categories, inputValue]);
+            setCategories((categories) => {
+                if (categories.find((oldCategory) => oldCategory === inputValue) === undefined) {
+                    return [...categories, inputValue];
+                } else {
+                    alert('this categorie is already in the list');
+                    return categories;
+                }
+            });
         } else {
             alert('The length of category must be at least 3 characters');
             return;
